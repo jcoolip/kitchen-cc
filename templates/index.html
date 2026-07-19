@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block content %}
+
+<section class="hero-card">
+    <div class="time" id="clock">--:--</div>
+    <div class="date" id="date">Loading...</div>
+</section>
+
+<section class="card">
+    <h2>Weather</h2>
+    <div class="big-value">{{ weather.temp }}°F</div>
+    <p>{{ weather.condition }}</p>
+    <p>High {{ weather.high }}° / Low {{ weather.low }}°</p>
+</section>
+
+{% endblock %}
